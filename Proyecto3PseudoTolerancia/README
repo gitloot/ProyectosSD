@@ -1,0 +1,7 @@
+En está versión se agrega un sistema de pseudo tolerancia a fallos, en donde existe un hilo vigilante encargado de corroborar el estado de los servidores activos en el momento. Así como de direccionar a los usuarios que buscan conectarse a alguno de los servidores, escogiendo "la ruta adecuada".
+
+Lo ideal es activar en el siguiente orden:
+HiloServidor
+HiloServidor2
+HiloVigilante
+HiloCliente
